@@ -1,0 +1,175 @@
+<html>
+<head>
+	<title>BUG TRACKING FORM</title>
+	  <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #5f668d;   
+        }
+
+        
+        .container {
+            width: 85%;
+            margin: 40px auto;  
+            background-color: #e8e6e3;
+            padding: 30px;
+            border-radius: 6px;
+        }
+
+       
+        header {
+            background-color: #2f355e;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #cfd3e6;
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+
+       
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        label {
+            font-size: 18px;
+            color: #2f355e;
+        }
+
+        
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        
+        input[type="file"] {
+            padding: 8px;
+        }
+
+   
+        input[type="submit"] {
+            background-color: #2f355e;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1d2140;
+        }
+    </style>
+</head>
+<body>
+	<header>Bug Tracker</header>
+		<h2>report all bugs!</h2>
+		  <div class="container">
+		<table>
+			<tr>
+				<td><label for="title">Bug Title</label></td>
+				<td><input type="text" id="title" name="title"></td>
+			</tr>
+			<tr>
+				<td><label for="description">Issue Description</label></td>
+				<td><textarea id="description" name="description"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="os">Operating System</label></td>
+				<td><select id="os" name="os">
+					<option value="">select os</option>
+					<option>windows 7</option>
+					<option>windows 8</option>
+					<option>Mac OS X</option>
+					<option>Linux</option>
+					<option>Other</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="browser">Browser</label></td>
+					<td colspan="2">
+							<input type="radio" id="Internet Explorer" name="browser" value="Internet Explorer"><label for="Internet Explorer">Internet Explorer</label><br>
+							<input type="radio" id="Chrome" name="browser" value="Chrome"><label for="chrome">chrome</label><br>
+							<input type="radio" id="Firefox" name="browser" value="Firefox"><label for="Firefox">Firefox</label><br>
+							<input type="radio" id="Safari" name="browser" value="Safari"><label for="Safari">Safari</label><br>
+							<input type="radio" id="Opera" name="browser" value="Opera"><label for="Opera">Opera</label><br> 
+							<input type="radio" id="Other" name="browser" value="Other"><label for="Other">Other</label><br>
+							</td>
+					
+				</tr>
+				<tr>
+					<td><label for="assigned">Assigned To</label></td>
+					<td><select id="assigned" name="assigned">
+						<option value=""></option>
+						<option>User A</option>
+						<option>User b</option>
+						<option>User c</option>
+						</select>
+						</td>
+				</tr>
+				<tr>
+					<td><label for="priority">Priority</label></td>
+					<td><select id="priority" name="priority">
+						<option value=""></option>
+						<option>low</option>
+						<option>medium</option>
+						<option>high</option>
+						</select>
+						</td>
+				</tr>		
+				<tr>
+					<td><label for="screenshot">Screenshot</label></td>
+					<td>
+						<input type="file" id="screenshot" name="screenshot">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="status">Status</label></td>
+					<td><select id="status" name="status">
+						<option value=""></option>
+						<option>Open</option>
+						<option>In progress</option>
+						<option>Closed</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td><label for="submit"></label></td>
+					<td colspan="2">
+                    <input type="submit" value="Submit"></td>
+				</tr>	
+			</div>	
+		</table>
+</body>
+</html>	
