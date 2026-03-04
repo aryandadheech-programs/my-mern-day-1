@@ -12,6 +12,9 @@ Day 3: Forms and Layouts
 - Created an "Order Delivery Tracking Form" using HTML tables and form elements.
 
 Day 4: Added Inline CSS to Order Form.
--  Use Inline CSS in my yesterday task of "Order Delivery Tracking Form". 
+-  Use Inline CSS in my yesterday task of "Order Delivery Tracking Form".
+Day 5: Create Bug Tracking form.
+-  Created an "Bug Tracking form" using HTML tables and form elements with internal CSS.
+
 
  
