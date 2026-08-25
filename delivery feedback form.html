@@ -1,0 +1,228 @@
+<html>
+<head>
+    <title> Delivery Feedback </title>
+    <style>
+		body {
+			background-image: url("bg1.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.main-container {
+            background-color: white;
+            width: 60%;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+			margin-left: auto;
+            margin-right: auto; 
+			
+        }
+        h1 {
+            color: #6b3906;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        p {
+            color: #a3570b;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 100%; 
+            margin-left: auto;
+            margin-right: auto; 
+			height: 100%;	
+            border-collapse: collapse;
+			font-size:18px;
+        }
+        
+      
+        .label-col {
+            width: 30%;
+            color: #6b3906;
+            font-weight: ;
+            vertical-align: top;
+            padding-top: 15px;
+            font-family: Arial, Helvetica;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+
+        td input[type="text"], 
+        td input[type="email"],
+		td select{
+            width: 100%;          
+            padding: 8px;          
+            box-sizing: border-box; 
+            border: 1px solid #5e3205;
+            border-radius: 4px;
+			height:40px;
+			font-family: Arial, Helvetica;
+			font-size:18px;
+			color: #6b3906;
+        }
+
+   
+        input[type="radio"] {
+            width: auto ;
+            margin: 0 0 18px 0;
+            cursor: pointer;
+			font-family: Arial, Helvetica;
+			
+			
+			
+        }
+
+        .sub-label {
+            font-size: 12px;
+            color: #5e3205;
+            display: block;
+            margin-top: 2px;
+			font-family: Arial, Helvetica;
+        }
+
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+	<div class="main-container">
+    <header align="center"> 
+        <img src="head1.jpg" width="15%" height="15%" alt="Logo">
+    </header>
+    <h1> DELIVERY FEEDBACK </h1>
+    <p>Thanks for ordering with us. Please tell us about your experience.</p><br>
+
+    <form>	
+        <table>
+            <tr>
+                <td class="label-col"><label for="name">Name</label></td>
+                <td colspan="2"><input type="text" id="name" name="name"></td>
+            </tr>
+
+            <tr>
+                <td class="label-col"><label>Where are you?</label></td>
+                <td colspan="2">
+                    <input type="text" name="street">
+                    <span class="sub-label">Street Address</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <input type="text" name="address2">
+                    <span class="sub-label">Address line 2</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="text" name="city">
+                    <span class="sub-label">City</span>
+                </td>
+                <td>
+                    <input type="text" name="state">
+                    <span class="sub-label">State / Region / Province</span>
+                </td>
+            </tr>
+			<tr>
+                <td></td>
+                <td>
+                    <input type="text" name="postalzipcode">
+                    <span class="sub-label">Postal / Zip Code</span>
+                </td>
+                <td>
+					<select name="country" >
+						<option value="" disabled selected>Select Country</option>
+						<option value="AF">Afghanistan</option>
+						<option value="AL">Albania</option>
+						<option value="DZ">Algeria</option>
+						<option value="AD">Andorra</option>
+						<option value="AO">Angola</option>
+						<option value="AR">Argentina</option>
+						<option value="AM">Armenia</option>
+						<option value="AU">Australia</option>
+						<option value="AT">Austria</option>
+						<option value="AZ">Azerbaijan</option>
+						<option value="BH">Bahrain</option>
+						<option value="BD">Bangladesh</option>
+						<option value="BE">Belgium</option>
+						<option value="BR">Brazil</option>
+						<option value="CA">Canada</option>
+						<option value="CN">China</option>
+						<option value="FR">France</option>
+						<option value="DE">Germany</option>
+						<option value="IN">India</option>
+						<option value="ID">Indonesia</option>
+						<option value="IT">Italy</option>
+						<option value="JP">Japan</option>
+						<option value="MY">Malaysia</option>
+						<option value="MX">Mexico</option>
+						<option value="NP">Nepal</option>
+						<option value="NL">Netherlands</option>
+						<option value="NZ">New Zealand</option>
+						<option value="PK">Pakistan</option>
+						<option value="PH">Philippines</option>
+						<option value="RU">Russia</option>
+						<option value="SA">Saudi Arabia</option>
+						<option value="SG">Singapore</option>
+						<option value="ZA">South Africa</option>
+						<option value="ES">Spain</option>
+						<option value="LK">Sri Lanka</option>
+						<option value="CH">Switzerland</option>
+						<option value="TH">Thailand</option>
+						<option value="TR">Turkey</option>
+						<option value="AE">United Arab Emirates</option>
+						<option value="GB">United Kingdom</option>
+						<option value="US">United States</option>
+						<option value="VN">Vietnam</option>
+					</select>
+					<span class="sub-label">Country</span>
+				</td>
+            </tr>
+            <tr>
+                <td class="label-col"><label>Who delivered your parcel? <span class="required">*</span></label></td>
+                <td colspan="2"><input type="text" name="delivery_person"></td>
+            </tr>
+
+            <tr>
+                <td class="label-col">Was your parcel delivered in good condition? <span class="required">*</span></td>
+                <td colspan="2">
+                    <input type="radio" id="yes1" name="condition" value="yes" > <label for="yes1">Yes</label><br>
+                    <input type="radio" id="partly1" name="condition" value="partly"> <label for="partly1">Partly</label><br>
+                    <input type="radio" id="no1" name="condition" value="no"> <label for="no1">No</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label-col">Are you satisfied with our delivery system?</td>
+                <td colspan="2">
+                    <input type="radio" id="yes2" name="delivery_status" value="yes"> <label for="yes2">Yes</label><br>
+                    <input type="radio" id="partly2" name="delivery_status" value="partly"> <label for="partly2">Partly</label><br>
+                    <input type="radio" id="no2" name="delivery_status" value="no"> <label for="no2">No</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label-col"><label for="Signature">Signature</label></td>
+                <td colspan="2"><input type="text" id="Signature" name="signature" style="height:100px;" ></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <input type="submit" value="Submit Feedback" style="width: auto; padding: 10px 20px; background: #ffa500; color: white; border-radius: 15px; cursor: pointer;">
+                </td>
+            </tr>
+        </table>	
+    </form>
+	</div>
+</body>
+</html>

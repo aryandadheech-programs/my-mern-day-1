@@ -1,0 +1,70 @@
+body {
+	background: #e0eafc;
+	font-family: 'Segoe UI', sans-serif;
+	margin: 0px;
+	padding: 50px 0;
+}	
+.services-section {
+	text-align: center;
+	max-width: 100%;
+	margin: 0 auto;
+}	
+h1 {
+	font-size: 30px;
+	color: #333;
+	margin-bottom: 10px;
+}	
+.intro-text {
+	color: #666;
+	margin-bottom: 40px;
+}
+.card-container {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	flex-wrap: wrap;
+}	
+.card {
+	background: white;
+	width: 300px;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease; 
+    border: 1px solid transparent;
+}	
+.card:hover {
+	transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    border-color: #e0eafc;
+}	
+.icon {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.card h1 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+.card p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-blue { background-color: #d1e9ff; color: #0056b3; }
+.btn-green { background-color: #d1f7d1; color: #1e561e; }
+.btn-orange { background-color: #ffe8d1; color: #a65d00; }
+	
+.btn:hover {
+    filter: brightness(0.9);
+}	
